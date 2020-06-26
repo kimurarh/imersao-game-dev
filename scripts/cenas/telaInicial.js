@@ -18,12 +18,12 @@ class TelaInicial {
         textAlign(CENTER);
         textSize(50);
         text('As aventuras de', width/2, height * 0.35); 
-        textSize(130);
-        text('Hipsta', width/2, height * 0.55); 
+        textSize(140);
+        text('Hipsta', width/2, height * 0.52); 
     }
 
     _botao() {
-        botaoGerenciador.y = height / 7 * 5;
+        botaoGerenciador.y = height / 7 * 4;
         botaoGerenciador.draw();
     }
 }

@@ -19,7 +19,7 @@ let inimigoGrande;
 let inimigoVoador;
 let pontuacao;
 
-let cenaAtual = 'telaInicial';
+let cenaAtual = 'telaInicial'; //telaInicial
 let cenas;
 let telaInicial;
 let botaoGerenciador;
@@ -54,8 +54,9 @@ const matrizInimigo = [
 	[104, 626],
 	[208, 626],
 	[312, 626],
-  ];
+];
 
+// Bruxinha
 const matrizPersonagem = [
 	[0, 0],
 	[220, 0],
@@ -74,6 +75,27 @@ const matrizPersonagem = [
 	[440, 810],
 	[660, 810],
   ];
+
+// const matrizPersonagem = [
+// 	[0, 0],
+// 	[88, 0],
+// 	[176, 0],
+// 	[264, 0],
+// 	[352, 0],
+// 	[440, 0],
+// 	[0, 132],
+// 	[88, 132],
+// 	[176, 132],
+// 	[264, 132],
+// 	[352, 132],
+// 	[440, 132],
+// 	[0, 264],
+// 	[88, 264],
+// 	[176, 264],
+// 	[264, 264],
+// 	[352, 264],
+// 	[440, 264]
+// ];
 
 const matrizInimigoGrande = [
 [0,0],
