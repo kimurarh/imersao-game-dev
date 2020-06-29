@@ -71,7 +71,7 @@ class Jogo {
             if(vida.vidas === 0) {
                 vida.draw();
                 image(imagemGameOver, width/2 - 200, height/2);
-                // noLoop();
+                noLoop();
                 somDoJogo.stop();
             }
         }
