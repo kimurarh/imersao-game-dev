@@ -26,17 +26,5 @@ class Animacao {
         if(this.frameAtual >= this.matriz.length - 1) {
             this.frameAtual = 0;
         }
-
-        // // Atualiza o frame do personagem
-        // this.xAxis += this.imagem.width/3;  // nº frames na horizontal da imagem
-
-        // if(this.xAxis >= this.imagem.width) {
-        //     this.xAxis = 0;
-        //     this.yAxis += this.imagem.height/7; // nº frames na vertical da imagem
-        //     if(this.yAxis >= this.imagem.height) {
-        //         this.yAxis = 0;
-        //     }
-        // }
-
     }
 }

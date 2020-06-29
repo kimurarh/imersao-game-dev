@@ -7,15 +7,15 @@ class Jogo {
     }
 
     setup() {
-        cenario = new Cenario(imagemCenario, 3);
+        cenario = new Cenario(imagemCenario, 6);
+        parallax = new Cenario(imagemParallax, 2);
         pontuacao = new Pontuacao();
 
         // Carrega do JSON os parametros do personagem
         vida = new Vida(config.personagem.vidaMaxima, config.personagem.vidaInicial);
 
-        personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 30, 110, 135, 220, 270);  // Bruxinha
-        // personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 30, 88, 132, 88, 132);
-        const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width - 52, 30, 52, 52, 104, 104, 10);
+        personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, height*0.04, 88, 132, 88, 132);
+        const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width - 52, height*0.04, 52, 52, 104, 104, 10);
         const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width - 52, 200, 100, 75, 200, 150, 10);
         const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width * 2, 0, 200, 200, 400, 400, 15);
 
@@ -34,6 +34,8 @@ class Jogo {
     draw() {
         cenario.exibe();
         cenario.move();
+        parallax.exibe();
+        parallax.move();
 
         vida.draw();
         pontuacao.exibe();

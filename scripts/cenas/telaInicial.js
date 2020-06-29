@@ -16,10 +16,8 @@ class TelaInicial {
     _texto() {
         textFont(fonteTelaInicial);
         textAlign(CENTER);
-        textSize(50);
-        text('As aventuras de', width/2, height * 0.35); 
-        textSize(140);
-        text('Hipsta', width/2, height * 0.52); 
+        textSize(120);
+        text('lost in space', width/2, height * 0.45); 
     }
 
     _botao() {
