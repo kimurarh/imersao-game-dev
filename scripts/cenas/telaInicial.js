@@ -17,6 +17,7 @@ class TelaInicial {
         textFont(fonteTelaInicial);
         textAlign(CENTER);
         textSize(120);
+        fill('white');
         text('lost in space', width/2, height * 0.45); 
     }
 

@@ -15,13 +15,16 @@ class Jogo {
         vida = new Vida(config.personagem.vidaMaxima, config.personagem.vidaInicial);
 
         personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, height*0.04, 88, 132, 88, 132);
-        const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width - 52, height*0.04, 52, 52, 104, 104, 10);
-        const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width - 52, 200, 100, 75, 200, 150, 10);
-        const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width * 2, 0, 200, 200, 400, 400, 15);
+        const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width - 52, height*0.04, 90, 101.6, 451, 508, 10);
+        const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width - 52, 200, 89, 63, 355, 250, 10);
+        const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width * 2, 0, 202, 131, 1214, 787, 15);
+        const inimigoNave = new Inimigo(matrizInimigoNave, imagemInimigoNave, width * 2, 100, 173, 125, 355, 250, 15);
 
         inimigos.push(inimigo);
         inimigos.push(inimigoGrande);
         inimigos.push(inimigoVoador);
+        inimigos.push(inimigoNave);
+
     }
 
     keyPressed(key) {
@@ -68,7 +71,7 @@ class Jogo {
             if(vida.vidas === 0) {
                 vida.draw();
                 image(imagemGameOver, width/2 - 200, height/2);
-                noLoop();
+                // noLoop();
                 somDoJogo.stop();
             }
         }
